@@ -92,7 +92,7 @@ button {
   letter-spacing: 1px;
 }
 
-#email-address {
+#address {
   color: var(--dark-grey);
   font-weight: var(--fw-700);
 }
