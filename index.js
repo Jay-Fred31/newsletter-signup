@@ -17,10 +17,6 @@ function submitForm (){
         errorMessage.setAttribute("hidden", "");
      }, 2000)
    }
-//    else{
-//     location.replace("http://127.0.0.1:5500/thankyou.html");
-     
-//    }
 }
 
 function emailValue(){
