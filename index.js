@@ -2,6 +2,7 @@
 const inputValue = document.querySelector('#em');
 const submitBtn = document.getElementById("submit-btn");
 const errorMessage = document.querySelector('.error');
+const signup = document.getElementById('home');
 
 function submitForm (){
    
@@ -15,10 +16,11 @@ function submitForm (){
         inputValue.classList.remove("edit");
         errorMessage.setAttribute("hidden", "");
      }, 2000)
-   }else{
-    location.replace("http://127.0.0.1:5500/thankyou.html");
-     
    }
+//    else{
+//     location.replace("http://127.0.0.1:5500/thankyou.html");
+     
+//    }
 }
 
 function emailValue(){
@@ -28,6 +30,7 @@ function emailValue(){
     console.log(emailEntered.length)
     if(emailFormate.test(emailEntered)){
         console.log('correct')
+        signup.setAttribute("href", "http://127.0.0.1:5500/thankyou.html");
         submitBtn.setAttribute("aria-disabled", "false");
         localStorage.setItem("emailAddress", emailEntered)
         return;
