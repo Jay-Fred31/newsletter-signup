@@ -11,7 +11,7 @@ function emailValue(){
       /^[A-za-z0-9]+([\.-]?[A-za-z0-9]+)*@\w+([\.-]?[A-za-z0-9]+)*(\.[A-za-z0-9]{2,3})+$/;
     console.log(emailEntered.length)
     if(emailFormate.test(emailEntered)){
-        signup.setAttribute("href", "http://127.0.0.1:5500/thankyou.html");
+        signup.setAttribute("href", "thankyou.html");
         submitBtn.setAttribute("aria-disabled", "false");
         localStorage.setItem("emailAddress", emailEntered)
         return;
